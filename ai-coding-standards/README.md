@@ -60,6 +60,10 @@ ai-coding-standards/
 ├── README.md                           # Master repository guide and philosophy (You are here)
 ├── MASTER-RULES.md                     # The Master AI Coding Constitution & Protocol
 │
+├── core/
+│   ├── GENERAL-RULES.md                # 30 Universal laws for all languages, runtimes & stacks
+│   └── AI-BEHAVIOR-RULES.md            # Anti-hallucination protocols, confidence signaling, conduct
+│
 ├── analysis/
 │   └── COMMON-MISTAKES-ANALYSIS.md     # In-depth 22-category analysis of AI coding failures & remedies
 │
@@ -100,7 +104,7 @@ ai-coding-standards/
 │
 ├── testing/
 │   ├── TESTING-RULES.md                # Testing pyramid (70/20/10), determinism, boundary edge cases
-│   └── QA-RULES.md                     # Severity grading (S1-S5), mandatory bug regression tests
+│   └── QA-RULES.md                     # Severity grading (S1-S5), 11-category PR review checklist
 │
 ├── devops/
 │   ├── DEPLOYMENT-RULES.md             # Non-root Docker, health/readiness probes, graceful shutdown
@@ -119,10 +123,11 @@ ai-coding-standards/
 ### For AI Coding Agents
 1. **Always read [MASTER-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/ai-coding-standards/MASTER-RULES.md) first** before initiating any engineering task.
 2. Follow the 10 sequential operational steps: Inspect, Understand, Identify Constraints, Plan Smallest Change, Preserve Unrelated, Consider Security, Implement, Test, Review Diff, Report.
-3. When operating within a specific domain, inspect the corresponding specialized rulebook (e.g. [`backend/DATABASE-RULES.md`](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/ai-coding-standards/backend/DATABASE-RULES.md)).
-4. **Execute the [PRE-COMPLETION-CHECKLIST.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/ai-coding-standards/checklists/PRE-COMPLETION-CHECKLIST.md)** and self-audit using the 13 reflection questions prior to reporting task completion.
+3. Review [core/GENERAL-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/ai-coding-standards/core/GENERAL-RULES.md) and [core/AI-BEHAVIOR-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/ai-coding-standards/core/AI-BEHAVIOR-RULES.md) to understand operational boundaries and anti-hallucination protocols.
+4. When operating within a specific domain, inspect the corresponding specialized rulebook (e.g. [`backend/DATABASE-RULES.md`](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/ai-coding-standards/backend/DATABASE-RULES.md)).
+5. **Execute the [PRE-COMPLETION-CHECKLIST.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/ai-coding-standards/checklists/PRE-COMPLETION-CHECKLIST.md)** and self-audit using the 13 reflection questions prior to reporting task completion.
 
 ### For Engineering Leads & Developers
 - Add this directory to `.cursorrules`, `.windsurfrules`, Claude project memory, or Antigravity configuration.
-- Use the severity triage rubric in [QA-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/ai-coding-standards/testing/QA-RULES.md) for automated PR reviews.
+- Use the 11-category review checklist and severity triage rubric in [QA-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/ai-coding-standards/testing/QA-RULES.md) for automated PR reviews.
 - Integrate the [SECURITY-CHECKLIST.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/ai-coding-standards/checklists/SECURITY-CHECKLIST.md) into threat modeling and staging deployment gates.

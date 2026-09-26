@@ -112,7 +112,7 @@ Every rule across this system is categorized by one of four standard requirement
 - **[MUST]**: Universal, mandatory requirement. Applies in all contexts. Violations block PR merging and fail automated quality gates.
 - **[SHOULD]**: Strong architectural recommendation. Valid exceptions exist in rare scenarios, but must be documented with technical rationale.
 - **[MAY]**: Discretionary practice. Authors and agents may choose this pattern depending on team preference and project scale.
-- **[CONTEXT-DEPENDENT]**: Applicability depends directly on the project's architecture, threat model, hosting environment, or technology stack (e.g. cookie security applies only to browser-based web applications; SSRF defense applies only when fetching user-supplied URLs).
+- **[CONTEXT-DEPENDENT]**: Applicability depends directly on the project's architecture, threat model, hosting environment, or technology stack.
 
 ---
 
@@ -122,7 +122,9 @@ For in-depth, actionable rules and bad vs. correct code implementations, referen
 
 | Domain | Canonical Rulebook | Scope Summary |
 | :--- | :--- | :--- |
-| **Analysis** | [COMMON-MISTAKES-ANALYSIS.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/ai-coding-standards/analysis/COMMON-MISTAKES-ANALYSIS.md) | 22-category technical post-mortem with code examples |
+| **Core Laws** | [core/GENERAL-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/ai-coding-standards/core/GENERAL-RULES.md) | 30 universal laws across all languages & stacks |
+| **AI Behavior** | [core/AI-BEHAVIOR-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/ai-coding-standards/core/AI-BEHAVIOR-RULES.md) | Anti-hallucination, confidence signaling, interaction protocol |
+| **Analysis** | [analysis/COMMON-MISTAKES-ANALYSIS.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/ai-coding-standards/analysis/COMMON-MISTAKES-ANALYSIS.md) | 22-category technical post-mortem with code examples |
 | **Frontend** | [frontend/FRONTEND-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/ai-coding-standards/frontend/FRONTEND-RULES.md) | HTML5 semantics, lifecycle teardown, client forms |
 | **State Management** | [frontend/STATE-MANAGEMENT-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/ai-coding-standards/frontend/STATE-MANAGEMENT-RULES.md) | Server vs client state, URL persistence, immutability |
 | **Accessibility** | [frontend/ACCESSIBILITY-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/ai-coding-standards/frontend/ACCESSIBILITY-RULES.md) | WCAG 2.2 AA, ARIA landmarks, focus rings, keyboard traps |
@@ -145,11 +147,11 @@ For in-depth, actionable rules and bad vs. correct code implementations, referen
 | **Code Quality** | [architecture/CODE-QUALITY-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/ai-coding-standards/architecture/CODE-QUALITY-RULES.md) | Cognitive complexity <= 15, guard clauses, immutability |
 | **Refactoring** | [architecture/REFACTORING-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/ai-coding-standards/architecture/REFACTORING-RULES.md) | Consumer mapping, characterization tests, surgical diffs |
 | **Automated Testing** | [testing/TESTING-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/ai-coding-standards/testing/TESTING-RULES.md) | Testing pyramid (70/20/10), determinism, boundary cases |
-| **QA & Verification** | [testing/QA-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/ai-coding-standards/testing/QA-RULES.md) | Severity grading (S1-S5), mandatory bug regression tests |
+| **QA & Verification** | [testing/QA-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/ai-coding-standards/testing/QA-RULES.md) | Severity grading (S1-S5), 11-category PR review checklist |
 | **Deployment Hygiene** | [devops/DEPLOYMENT-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/ai-coding-standards/devops/DEPLOYMENT-RULES.md) | Non-root containers, /healthz /readyz, graceful shutdown |
 | **CI/CD Pipelines** | [devops/CI-CD-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/ai-coding-standards/devops/CI-CD-RULES.md) | Automated gates, immutable commit-SHA tags, branch protection |
 | **Environment Config** | [devops/ENVIRONMENT-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/ai-coding-standards/devops/ENVIRONMENT-RULES.md) | 12-Factor config, startup schema validation, zero fallback secrets |
-| **Monitoring & Telemetry**| [devops/MONITORING-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/ai-coding-standards/devops/MONITORING-RULES.md) | Structured logging, tracing correlation IDs, metrics, APM |
+| **Monitoring & Telemetry**| [devops/MONITORING-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/ai-coding-standards/devops/MONITORING-RULES.md) | Structured JSON logging, tracing correlation IDs, RED metrics |
 | **Documentation** | [documentation/DOCUMENTATION-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/ai-coding-standards/documentation/DOCUMENTATION-RULES.md) | Documenting "Why" over "What", ADR records, OpenAPI sync |
 | **Pre-Completion Gate** | [checklists/PRE-COMPLETION-CHECKLIST.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/ai-coding-standards/checklists/PRE-COMPLETION-CHECKLIST.md) | Mandatory 17-point sign-off checklist before declaring done |
 | **Security Matrix** | [checklists/SECURITY-CHECKLIST.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/ai-coding-standards/checklists/SECURITY-CHECKLIST.md) | 34-point web security audit (Universal vs Conditional) |
