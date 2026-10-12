@@ -185,19 +185,26 @@ export class AccountService {
 - Destructive actions without confirmation modals or undo mechanisms.
 - Layout shifts (Cumulative Layout Shift) caused by un-dimensioned images or dynamically injected banners.
 - Inconsistent color scales, mismatched margins, and chaotic typography violating design systems.
+- Over-decorating with generic AI clichés: floating particle dots, pulsing animations, unrequested gradients, heavy borders around every container, and glassmorphism.
+- Opportunistically redesigning existing interfaces when making unrelated feature modifications.
 
 ### 3.2 Why Those Mistakes Are Problematic
 - Missing loading/error states leave users wondering if their action registered or if the app froze.
 - Accidental clicks on destructive buttons cause irreversible data loss.
 - CLS frustrates users and degrades SEO search rankings.
+- Excessive decorations, pulsing animations, and particle effects trigger vestibular motion discomfort, consume excessive CPU/battery, degrade Core Web Vitals (INP), and create visual noise that obscures content.
+- Unsolicited redesigns break established brand design systems, clash with surrounding pages, and create bloated PR diffs.
 
 ### 3.3 How They Should Be Prevented
 - Every data-fetching UI component must handle four distinct states: Initial/Idle, Loading, Error, and Empty.
 - Destructive operations must require two distinct intentional steps (modal confirmation, double-click, or temporary undo banner).
 - Reserve layout dimensions using aspect-ratio or skeleton placeholders.
+- Default to clean solid surfaces, mathematical 4px/8px spatial rhythm, and purposeful motion triggered solely by user interaction.
+- Respect existing UI styles; establish hierarchy through whitespace and typography rather than excessive borders and gradients.
 
 ### 3.4 The Correct Rule an AI Should Follow
-> **Rule**: An AI agent **MUST** explicitly implement Loading, Error, Empty, and Success states for every dynamic view, and **MUST** require explicit confirmation for destructive actions.
+> **Rule**: An AI agent **MUST** explicitly implement Loading, Error, Empty, and Success states for every dynamic view, **MUST** require explicit confirmation for destructive actions, and **MUST** avoid generic AI UI anti-patterns (pulsing effects, decorative dots, default gradients, border-bloat, glassmorphism).
+- *Canonical Reference*: See [UI-RULES.md](../ui-ux/UI-RULES.md#section-2-avoid-common-ai-ui-mistakes).
 
 ### 3.5 Bad vs. Correct Approach
 ```tsx

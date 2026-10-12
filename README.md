@@ -104,7 +104,7 @@ All standards in this repository use standardized requirement categories:
 │   └── DEPENDENCY-SECURITY-RULES.md    # Lockfile integrity, supply-chain vetting, CVE scanning
 │
 ├── ui-ux/
-│   ├── UI-RULES.md                     # Visual hierarchy, typography scales, 4/8pt spacing, token usage
+│   ├── UI-RULES.md                     # Visual hierarchy, typography scales, 4/8pt spacing, anti-AI UI mistakes
 │   ├── UX-RULES.md                     # Feedback loops, affordance, empty/loading/error states, dialogs
 │   └── DESIGN-SYSTEM-RULES.md          # Component contracts, atomicity, consistent variant naming
 │

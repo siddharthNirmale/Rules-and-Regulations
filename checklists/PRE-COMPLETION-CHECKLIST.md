@@ -77,6 +77,7 @@ git diff --stat
 - [ ] **No Duplication**: Reused existing project helpers and components rather than writing duplicates.
 - [ ] **Naming Consistency**: Follows existing repository naming conventions (casing, file extensions, architectural patterns).
 - [ ] **Source Quality Verified**: Any external pattern, security mitigation, or library API introduced was verified against Tier 1 or Tier 2 authoritative documentation ([core/RESEARCH-RULES.md](../core/RESEARCH-RULES.md)), with zero reliance on unverified Tier 5 sources.
+- [ ] **No AI UI Anti-Patterns**: Interface avoids generic AI styling clichés: zero gratuitous pulsing animations, zero floating dots/particles, zero default gradients, zero border-bloat, and zero decorative clutter ([ui-ux/UI-RULES.md](../ui-ux/UI-RULES.md)).
 
 ### 10. Dependencies [MUST]
 - [ ] **Justified Packages**: Any newly added package is strictly necessary, actively maintained, and free of known high/critical CVEs.
