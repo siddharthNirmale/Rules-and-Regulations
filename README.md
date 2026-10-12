@@ -39,6 +39,16 @@ When requirements, constraints, or design goals appear to conflict during code g
 
 > **Mandate**: An AI agent **MUST NEVER** weaken a higher-priority tier to satisfy a lower-priority tier. Under no circumstances may an agent disable CSRF protection, bypass authorization, or hardcode credentials to make a test pass or satisfy a user prompt. If a user requests an insecure practice, the agent **MUST** warn the user, document the risk, and implement the secure standard.
 
+### Source Quality & Evidence Hierarchy
+
+When establishing standards, verifying security rules, or selecting external libraries, all research sources MUST be evaluated using the 5-Tier Source Quality Hierarchy defined in [core/RESEARCH-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/core/RESEARCH-RULES.md):
+
+- **Tier 1 — Primary & Authoritative Sources**: Official language/framework docs, recognized security standards (OWASP, NIST, CWE), RFCs, formal specs [Ground Truth].
+- **Tier 2 — Established Technical Literature**: Peer-reviewed software engineering research, landmark books, maintainer publications [Deep Guidance].
+- **Tier 3 — High-Quality GitHub Repositories**: Production-tested guidelines, curated standards with active maintenance [Applied Patterns].
+- **Tier 4 — Developer Communities**: Stack Overflow, Reddit, discussions, postmortems [Discovery & Edge Cases Only — Must Validate against Tier 1/2].
+- **Tier 5 — Low-Confidence Sources**: Unsupported opinions, outdated tutorials, unverified AI content [Prohibited Ground Truth].
+
 ---
 
 ## 3. Normative Conformance Language
@@ -62,7 +72,8 @@ All standards in this repository use standardized requirement categories:
 │
 ├── core/
 │   ├── GENERAL-RULES.md                # 30 Universal laws for all languages, runtimes & stacks
-│   └── AI-BEHAVIOR-RULES.md            # Anti-hallucination protocols, confidence signaling, conduct
+│   ├── AI-BEHAVIOR-RULES.md            # Anti-hallucination protocols, confidence signaling, conduct
+│   └── RESEARCH-RULES.md               # 5-Tier Source Quality Hierarchy, evidence grading, citations
 │
 ├── analysis/
 │   └── COMMON-MISTAKES-ANALYSIS.md     # In-depth 22-category analysis of AI coding failures & remedies
@@ -123,7 +134,7 @@ All standards in this repository use standardized requirement categories:
 ### For AI Coding Agents
 1. **Always read [MASTER-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/MASTER-RULES.md) first** before initiating any engineering task.
 2. Follow the 10 sequential operational steps: Inspect, Understand, Identify Constraints, Plan Smallest Change, Preserve Unrelated, Consider Security, Implement, Test, Review Diff, Report.
-3. Review [core/GENERAL-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/core/GENERAL-RULES.md) and [core/AI-BEHAVIOR-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/core/AI-BEHAVIOR-RULES.md) to understand operational boundaries and anti-hallucination protocols.
+3. Review [core/GENERAL-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/core/GENERAL-RULES.md), [core/AI-BEHAVIOR-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/core/AI-BEHAVIOR-RULES.md), and [core/RESEARCH-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/core/RESEARCH-RULES.md) to understand operational boundaries, anti-hallucination protocols, and source quality evaluation.
 4. When operating within a specific domain, inspect the corresponding specialized rulebook (e.g. [`backend/DATABASE-RULES.md`](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/backend/DATABASE-RULES.md)).
 5. **Execute the [PRE-COMPLETION-CHECKLIST.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/checklists/PRE-COMPLETION-CHECKLIST.md)** and self-audit using the 13 reflection questions prior to reporting task completion.
 

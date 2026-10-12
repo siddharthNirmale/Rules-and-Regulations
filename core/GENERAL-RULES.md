@@ -17,6 +17,7 @@ Ensure all existing passing tests continue to pass after any modification. Publi
 
 ### Law 4 — Validate Assumptions Against Ground Truth [MUST]
 Never assume library behavior, API response shapes, or database schema details without checking source files, lockfiles, or official documentation.
+- *Canonical Reference*: See [RESEARCH-RULES.md](./RESEARCH-RULES.md) for the 5-Tier Source Quality Hierarchy.
 
 ---
 

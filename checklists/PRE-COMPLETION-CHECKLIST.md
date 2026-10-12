@@ -76,6 +76,7 @@ git diff --stat
 - [ ] **No Over-Engineering**: Simplest correct implementation used. No unnecessary generic factories or multi-tier abstractions.
 - [ ] **No Duplication**: Reused existing project helpers and components rather than writing duplicates.
 - [ ] **Naming Consistency**: Follows existing repository naming conventions (casing, file extensions, architectural patterns).
+- [ ] **Source Quality Verified**: Any external pattern, security mitigation, or library API introduced was verified against Tier 1 or Tier 2 authoritative documentation ([core/RESEARCH-RULES.md](../core/RESEARCH-RULES.md)), with zero reliance on unverified Tier 5 sources.
 
 ### 10. Dependencies [MUST]
 - [ ] **Justified Packages**: Any newly added package is strictly necessary, actively maintained, and free of known high/critical CVEs.

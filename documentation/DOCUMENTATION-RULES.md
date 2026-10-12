@@ -79,3 +79,16 @@
 - **Reason**: Developers and autonomous AI agents need an immediate, verified onboarding guide to build and test the project without guessing commands.
 - **Risk**: Onboarding friction, lost productivity, and broken CI pipelines.
 - **Exceptions**: None.
+
+---
+
+## Rule DOC-05: Evidence-Based Documentation & Citation Integrity [MUST]
+- **Rule**: Technical documentation, Architecture Decision Records (ADRs), pull request descriptions, and proposed standards MUST cite Tier 1 or Tier 2 sources (as defined in [core/RESEARCH-RULES.md](../core/RESEARCH-RULES.md)) for all security, performance, and architectural assertions.
+  - All citations MUST trace back to primary documentation or empirical research.
+  - Authors and AI agents MUST NOT fabricate citations, URLs, author names, publication dates, or adoption metrics.
+  - Inaccessible, offline, or paywalled sources MUST be explicitly tagged as `[UNVERIFIED - INACCESSIBLE]`.
+  - Proposals introducing new rules MUST adhere to the structured research output schema defined in `core/RESEARCH-RULES.md`.
+- **Reason**: Architectural documentation containing unverified or fabricated citations destroys trust in historical decision records and leads future engineering teams to repeat debunked mistakes.
+- **Risk**: Architectural drift, flawed trade-off analysis, and security regressions.
+- **Exceptions**: Internal private implementation notes that cite internal ADRs or existing codebase precedents.
+

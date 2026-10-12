@@ -24,8 +24,8 @@ Every AI coding agent MUST execute tasks following these 10 sequential operation
 [ 6. Consider Security ] ➔ [ 7. Implement ] ➔ [ 8. Test & Verify ] ➔ [ 9. Review Diff ] ➔ [ 10. Report with Transparency ]
 ```
 
-1. **Inspect Before Modifying**: Never write, edit, or delete code until you have examined the relevant files, existing utilities, package dependencies, and surrounding call sites.
-2. **Understand the Existing Architecture**: Identify established patterns for error handling, data flow, logging, state management, and file naming. Follow them consistently.
+1. **Inspect Before Modifying**: Never write, edit, or delete code until you have examined the relevant files, existing utilities, package dependencies, and surrounding call sites. When evaluating external libraries or platform APIs, verify against Tier 1 authoritative documentation.
+2. **Understand the Existing Architecture**: Identify established patterns for error handling, data flow, logging, state management, and file naming. When external patterns are proposed, substantiate them using the Source Quality Hierarchy ([core/RESEARCH-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/core/RESEARCH-RULES.md)).
 3. **Identify Constraints**: Determine runtime constraints (Node version, Python version, browser support targets, database engines, performance SLAs) before designing a solution.
 4. **Plan the Smallest Appropriate Change**: Formulate the minimal, most surgical implementation that completely satisfies the requirements. Avoid speculative abstractions and unused helpers.
 5. **Preserve Unrelated Functionality**: Never alter, reformat, or delete code, comments, or imports outside the boundary of the requested task. Existing functionality is presumed correct.
@@ -101,7 +101,7 @@ Before declaring any task complete or presenting diffs to human reviewers, the A
 10. **Did I test the relevant behavior?** (Are observable behaviors asserted without brittle coupling to mocks?)
 11. **Did I check the production build?** (Does the application compile cleanly in production mode?)
 12. **Did I review the final changes?** (Have I audited the full diff line-by-line?)
-13. **Am I making assumptions that should instead be verified?** (Have I verified library methods against real source/docs?)
+13. **Am I making assumptions that should instead be verified?** (Have I verified library methods, security controls, and architectural choices against Tier 1 or Tier 2 authoritative sources rather than low-confidence tutorials?)
 
 ---
 
@@ -124,6 +124,7 @@ For in-depth, actionable rules and bad vs. correct code implementations, referen
 | :--- | :--- | :--- |
 | **Core Laws** | [core/GENERAL-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/core/GENERAL-RULES.md) | 30 universal laws across all languages & stacks |
 | **AI Behavior** | [core/AI-BEHAVIOR-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/core/AI-BEHAVIOR-RULES.md) | Anti-hallucination, confidence signaling, interaction protocol |
+| **Research & Sources** | [core/RESEARCH-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/core/RESEARCH-RULES.md) | Source quality hierarchy (Tiers 1-5), verification, citation integrity |
 | **Analysis** | [analysis/COMMON-MISTAKES-ANALYSIS.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/analysis/COMMON-MISTAKES-ANALYSIS.md) | 22-category technical post-mortem with code examples |
 | **Frontend** | [frontend/FRONTEND-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/frontend/FRONTEND-RULES.md) | HTML5 semantics, lifecycle teardown, client forms |
 | **State Management** | [frontend/STATE-MANAGEMENT-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/frontend/STATE-MANAGEMENT-RULES.md) | Server vs client state, URL persistence, immutability |

@@ -89,3 +89,14 @@ The AI agent MUST NOT reference, import, or call any of the following without ve
 - **Rule**: The agent MUST NOT add unsolicited features, opportunistic refactors, or cosmetic reformatting to files outside the requested scope.
 - **Reason**: Over-delivering obscures the core change during code review and increases the regression footprint.
 - **Risk**: Code review delays and accidental removal of intentional edge-case logic.
+
+---
+
+### Rule BEH-09: Source Quality Hierarchy Adherence [MUST]
+- **Rule**: When researching technical solutions, evaluating libraries, or recommending architectural patterns, the agent MUST evaluate all sources using the 5-Tier Source Quality Hierarchy in [RESEARCH-RULES.md](./RESEARCH-RULES.md).
+  - Technical correctness, security baselines, and API signatures MUST be substantiated by Tier 1 (official docs, RFCs, NIST, OWASP) or Tier 2 (established engineering literature) sources.
+  - Community discussions (Tier 4: Stack Overflow, Reddit, forums) MAY be used to discover practical issues and recurring edge cases, but findings MUST be validated against Tier 1/2 sources before adoption.
+  - Tier 5 sources (unverified blogs, outdated tutorials, AI-generated content farms) MUST NEVER be used as ground truth to justify technical recommendations.
+- **Reason**: Basing code patterns on unverified secondary sources causes security regressions, deprecated API usage, and dependency vulnerabilities.
+- **Risk**: Hallucinated dependencies ("slopsquatting"), broken contracts, and silent security flaws.
+
