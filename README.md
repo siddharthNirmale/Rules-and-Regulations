@@ -20,7 +20,24 @@ This repository provides an **authoritative, enforceable, and production-tested 
 
 ---
 
-## 2. Priority & Conflict Resolution Hierarchy
+## 2. Quick Start: One-Click Agent Activation
+
+Copy and paste this single, self-contained command directly into your AI coding agent (Cursor, Antigravity, Claude Code, Windsurf, GitHub Copilot, Aider) to immediately activate and enforce these standards across your project:
+
+```text
+Ingest and strictly adhere to the engineering standards from https://github.com/siddharthNirmale/Rules-and-Regulations: Read MASTER-RULES.md as your governing constitution. Follow the 10 Invariant Operational Steps (Inspect, Understand, Plan, Implement, Test, Review Diff), obey the Priority Hierarchy (Security > Correctness > Constraints > Reliability > Performance > Simplicity), locate and apply relevant domain rulebooks across core/, frontend/, backend/, security/, ui-ux/, architecture/, testing/, devops/, and documentation/, avoid generic AI UI and coding anti-patterns, ground all external choices using core/RESEARCH-RULES.md, and verify checklists/PRE-COMPLETION-CHECKLIST.md before marking any task complete.
+```
+
+> **Where to paste this command**:
+> - **Cursor / Windsurf / Antigravity**: Paste directly into the Chat or Composer panel (`Cmd+L` / `Ctrl+L` or `Cmd+I` / `Ctrl+I`).
+> - **Claude Code / Aider**: Paste directly into your terminal session prompt.
+> - **GitHub Copilot**: Paste into the Copilot Chat sidebar.
+> - **Permanent Project Configuration**: Paste this command into `.cursorrules`, `.windsurfrules`, `CLAUDE.md`, or your agent's system instructions.
+> - *No manual editing or combining of multiple commands is required—simply copy the block above and run it.*
+
+---
+
+## 3. Priority & Conflict Resolution Hierarchy
 
 When requirements, constraints, or design goals appear to conflict during code generation, the AI agent **MUST** resolve tensions using the following strict priority order:
 
@@ -51,7 +68,7 @@ When establishing standards, verifying security rules, or selecting external lib
 
 ---
 
-## 3. Normative Conformance Language
+## 4. Normative Conformance Language
 
 All standards in this repository use standardized requirement categories:
 
@@ -62,7 +79,7 @@ All standards in this repository use standardized requirement categories:
 
 ---
 
-## 4. Repository Structure & Map
+## 5. Repository Structure & Map
 
 ```text
 .
@@ -129,10 +146,10 @@ All standards in this repository use standardized requirement categories:
 
 ---
 
-## 5. How to Ingest & Use These Standards
+## 6. How to Ingest & Use These Standards
 
 ### For AI Coding Agents
-1. **Always read [MASTER-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/MASTER-RULES.md) first** before initiating any engineering task.
+1. **Activate via Quick Start**: Run the single copy-paste command in [Section 2](#2-quick-start-one-click-agent-activation), or read [MASTER-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/MASTER-RULES.md) directly before initiating any engineering task.
 2. Follow the 10 sequential operational steps: Inspect, Understand, Identify Constraints, Plan Smallest Change, Preserve Unrelated, Consider Security, Implement, Test, Review Diff, Report.
 3. Review [core/GENERAL-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/core/GENERAL-RULES.md), [core/AI-BEHAVIOR-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/core/AI-BEHAVIOR-RULES.md), and [core/RESEARCH-RULES.md](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/core/RESEARCH-RULES.md) to understand operational boundaries, anti-hallucination protocols, and source quality evaluation.
 4. When operating within a specific domain, inspect the corresponding specialized rulebook (e.g. [`backend/DATABASE-RULES.md`](file:///c:/Users/siddh/Desktop/Projects/Rules%20and%20Regulations/backend/DATABASE-RULES.md)).
